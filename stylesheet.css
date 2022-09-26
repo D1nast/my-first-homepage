@@ -205,6 +205,7 @@ ul {
   visibility: hidden;
   transform: all 0.3s;
   transition-delay: 0.3s;
+  color:#222;
  }
  .contents-title p{
   font-size:15px;
