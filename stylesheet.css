@@ -207,8 +207,8 @@ ul {
   transition-delay: 0.3s;
  }
  .contents-title p{
-  font-size:40px;
-  letter-spacing: 3px;
+  font-size:30px;
+  letter-spacing: 2px;
   opacity:0.8;
   visibility: hidden;
   transform: all 0.3s;
