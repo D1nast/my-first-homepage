@@ -197,18 +197,17 @@ ul {
 }
 @media(max-width:670px){
  .contents{
- padding:60px 0px 10px 60px;
+ padding:60px 0px 10px 30px;
  }
   .contents-title h1{
-  font-size: 60px;
+  font-size: 40px;
   font-weight: normal;
   visibility: hidden;
   transform: all 0.3s;
   transition-delay: 0.3s;
  }
  .contents-title p{
-  font-size:30px;
-  letter-spacing: 2px;
+  font-size:25px;
   opacity:0.8;
   visibility: hidden;
   transform: all 0.3s;
