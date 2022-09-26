@@ -196,6 +196,9 @@ ul {
 	transition-delay: 0.3s;
 }
 @media(max-width:670px){
+ .contents{
+ padding:60px 0px 10px 10px;
+ }
   .contents-title h1{
   font-size: 26px;
   font-weight: normal;
@@ -205,12 +208,14 @@ ul {
  }
  .contents-title p{
   font-size:15px;
-  padding-left: 40px;
-  letter-spacing: 10px;
+  letter-spacing: 3px;
   opacity:0.8;
   visibility: hidden;
   transform: all 0.3s;
   transition-delay: 0.3s;
+ }
+ header{
+ height: 100px;
  }
 }	
 
