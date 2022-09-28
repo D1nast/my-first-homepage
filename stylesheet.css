@@ -217,6 +217,7 @@ ul {
 		transform: all 0.3s;
 		transition-delay: 0.3s;
 		letter-spacing: 0px;
+		padding-left: 10px;
 	}
 	header{
 	height: 100px;
