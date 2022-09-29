@@ -10,8 +10,8 @@
 </head>
 
 <body>
-	<!--ロード画面-->
-	<div class="loader">
+<!--ロード画面-->
+  <div class="loader">
 		<div class="loader-box">
 			<span></span>
 			<span></span>
@@ -19,10 +19,11 @@
 			<h2>Now Loading...</h2>
 		</div>
 	</div>
-
 <script>
 	$(function() {
-	/*Loading*/
+/*Loading*/
+/*setTimeoutで、上記の処理を実行 この場合、1300でloaderクラスに.ロード後の処理追加*/
+/*JavaScriptの処理*/
 	setTimeout(()=>{
     const loader=document.querySelector(".loader")
      	loader.classList.add("loaded");
@@ -35,8 +36,14 @@
     const showAbout=document.querySelector("#login")
      	showAbout.style.visibility="visible";
   	},1300);
-	/*setTimeoutで、上記の処理を実行 この場合、1300でloaderクラスに.ロード後の処理追加*/
-	/*hamburger*/
+
+/*hamburger $はJqueryを使用するサイン*/
+/*$("セレクタ")で何をどうするか指定 今回の場合は、.hamburgerをクリック*/
+/*toggleClassメソッドは指定したクラス名のCSSがある場合は削除を行い、なければ追加するメソッド*/
+/*今回はhtmlにis_activeがないので、is_activeが追加されてアニメーションができる*/
+/*$(this)はイベントが起こった要素を取得*/
+/*$(this)の中からfindして、そこにtoggleClassの処理*/
+/*JQueryの処理*/
 	const hamburger = $(".hamburger");
   const nav = $(".nav");
   	hamburger.click(function () {
@@ -45,7 +52,6 @@
   });
 });
 </script>
-
 	<header>
 			<div class="header-main">
 				<div class="header-logo">
@@ -67,13 +73,45 @@
 						</ul>
 					</nav>
 				</div>
-			</div>
+					<div class="contents">
+						<div class="contents-title">
+							<h1>Edit</h1>
+							<p>思い出をストレージする場所</p>
+						</div>
+					</div>
+				</div>
 	</header>
-	<div class="contents">
-		<div class="contents-title">
-			<h1>Edit</h1>
-			<p>思い出をストレージする場所</p>
+<!--第二ココンテンツ-->
+	<div class="second-contents">
+		<div class="second-main">
+			<h2>About</h2>
+			<div class="second-box">
+				<div class="second-flex">
+					<h1>Profile</h1>
+					<img src="profile.jpg">
+					<p>限界右足社会人</p>
+				</div>
+				<div class="second-flex">
+					<h1>Photo</h1>
+					<img src="photo.jpg">
+					<p>最近撮った写真</p>
+				</div>
+				<div class="second-flex">
+					<h1>JavaScript</h1>
+					<img src="JavaScript.png">
+					<p>JavaScriptとVBAを勉強<br>バックエンドはNode.js</p>
+				</div>
+				<div class="second-flex">
+					<h1>Media</h1>
+					<a href="https://www.youtube.com/channel/UC5RZ3Du5ShlWt8nYm1czEZw"><img src="media.avif"></a>
+					<p>自分のやつ（クリックでリンク先に）</p>	
+				</div>
+			</div>
+			<div class="second-footer">
+				<p>自分の作ったものを形にできるのが最大の魅力</p>
+			</div>
 		</div>
+
 	</div>
 
 <script src="../app.js"></script>
